@@ -2,13 +2,13 @@ from CarElementVisitor import CarElementVisitor
 
 class CarElementDoVisitor(CarElementVisitor):
     def visitBody(self, body):
-        print("Moving my body.")
+        body.operateBody()
 
     def visitCar(self, car):
-        print("Starting my car.")
+        car.operateCar()
 
     def visitWheel(self, wheel):
-        print("Kicking my {} wheel.".format(wheel.name))
+        wheel.operateWheel()
 
     def visitEngine(self, engine):
-        print("Starting my engine.")
+        engine.operateEngine()

@@ -12,7 +12,8 @@ class Car(CarElement):
         ]
 
     def accept(self, visitor):
-        for element in self.elements:
-            element.accept(visitor)
-
         visitor.visitCar(self)
+    def operateCar(self):
+        print("operate car")
+    def printCar(self):
+        print("print car")
