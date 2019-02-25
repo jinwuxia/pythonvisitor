@@ -4,7 +4,10 @@ NOT_IMPLEMENTED = "You should implement this."
 
 class CarElement:
     __metaclass__ = ABCMeta
-    
+
+    def getname(self):
+        print("element")
+
     @abstractmethod
     def accept(self, visitor):
-        raise NotImplementedError(NOT_IMPLEMENTED)
+        visitor.visit(self)

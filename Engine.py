@@ -2,8 +2,8 @@ from CarElement import CarElement
 
 class Engine(CarElement):
     def accept(self, visitor):
-        visitor.visitEngine(self)
-    def operateEngine(self):
+        visitor.visit(self)
+    def operate(self):
         print("operate engine")
-    def printEngine(self):
+    def print(self):
         print("print engine")

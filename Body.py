@@ -2,8 +2,8 @@ from CarElement import CarElement
 
 class Body(CarElement):
     def accept(self, visitor):
-        visitor.visitBody(self)
-    def operateBody(self):
+        visitor.visit(self)
+    def operate(self):
         print("operate body")
-    def printBody(self):
+    def print(self):
         print("print body")
