@@ -4,8 +4,8 @@ class Wheel(CarElement):
     def __init__(self, name):
         self.name = name
     def accept(self, visitor):
-        visitor.visit(self)
-    def operate(self):
+        visitor.visitWheel(self)
+    def operateWheel(self):
         print("operate wheel: " + self.name)
-    def print(self):
+    def printWheel(self):
         print("print wheel: " + self.name)
