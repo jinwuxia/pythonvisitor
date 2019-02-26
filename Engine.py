@@ -7,3 +7,5 @@ class Engine(CarElement):
         print("operate engine")
     def printEngine(self):
         print("print engine")
+    def getEngine(self):
+        pass

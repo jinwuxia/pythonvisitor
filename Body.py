@@ -7,3 +7,5 @@ class Body(CarElement):
         print("operate body")
     def printBody(self):
         print("print body")
+    def getBody(self):
+        pass

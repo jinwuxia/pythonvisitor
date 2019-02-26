@@ -9,3 +9,5 @@ class Wheel(CarElement):
         print("operate wheel: " + self.name)
     def printWheel(self):
         print("print wheel: " + self.name)
+    def getWheel(self):
+        pass

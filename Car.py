@@ -17,3 +17,5 @@ class Car(CarElement):
         print("operate car")
     def printCar(self):
         print("print car")
+    def getCar(self):
+        pass
