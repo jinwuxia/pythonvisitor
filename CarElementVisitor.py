@@ -1,13 +1,9 @@
 from abc import ABCMeta, abstractmethod
-
 NOT_IMPLEMENTED = "You should implement this."
 
 class CarElementVisitor:
     __metaclass__ = ABCMeta
-
-    def tranverse(self):
-        pass
-                
+     
     @abstractmethod
     def visitBody(self, element):
         element.getBody()
@@ -23,3 +19,7 @@ class CarElementVisitor:
     @abstractmethod
     def visitCar(self, element):
         element.getCar()
+	
+    def tranverse(self):
+        pass
+           
